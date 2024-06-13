@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | AutoMob-Mechanic</title>
+</head>
+<body>
+    <header>
+        <h2>
+            <a href="../Home/home.html">AutoMob-Mechanic</a>
+        </h2>
+        <div>
+            <a href="../Home/home.html">Home</a> | <a href="../Service/services.html">Services</a> | <a href="./booking.html">Booking</a> | <a href="mailto:contact@automob.co.in">contact@automob.co.in 📫</a> |
+            <a href="tel:999 999 9999">999 999 9999 📞</a> 
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Book Your Service</h1>
+        <form action="../Appointment/appointment.html" method="post" autocomplete="off">
+            <div>
+            <label for="name">Name: </label>
+            <input id="name" name="name" type="text" placeholder="John Daub" required />
+             </div>
+             <br>
+            <div>
+                <label for="email">Email-Id:</label>
+                <input id="email" name="email" type="email" placeholder="john@yahoo.com" required/>
+            </div>
+            <br>
+            <div>
+                <label for="phonenumber">Phone Number:</label>
+                <select name="code" id="code">
+                    <option value="code" selected disabled>code</option>
+                    <option value="+213">+213</option>
+                    <option value="+91">+91</option>
+                    <option value="+244">+244</option>
+                    <option value="+61">+61</option>
+                </select>
+                <input type="tel" id="phonenumber" placeholder="9823322332" required/>
+            </div><br>
+
+            <div>
+                <label for="select-service">Select Service:</label>
+                <select name="select=service" id="select-service" required>
+                    <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+                    <option value="Body Repair Service">Body Repair Service</option>
+                    <option value="Car Care Service">Car Care Service</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="car_make">Car Make:</label>
+                <input list="brand" name="car_make" id="car_make" placeholder="Suzuki, Toyota...." required/>
+                <datalist id="brand">
+                    <option value="Mahindra"></option>
+                    <option value="Honda"></option>
+                    <option value="Hyundai"></option>
+                    <option value="Ford"></option>
+                    <option value="Toyota"></option>
+                    <option value="Nissan"></option>
+                    <option value="etc"></option>
+                  </datalist>
+            </div><br>
+
+            <div>
+                <label for="car_model">Car Model:</label>
+                <input id="car_model" name="car_model" type="text" placeholder="Alto, Innova...." required />
+            </div><br>
+
+            <div>
+                <label for="petrol">Fuel Type:</label>
+
+                <input id="petrol" name="fuel_type" type="radio" required/> 
+                <label  for="petrol">Petrol</label> 
+
+                <input id="diesel" name="fuel_type" type="radio" required/> 
+                <label for="diesel">Diesel</label>
+
+                <input id="lpg" name="fuel_type" type="radio" required/> 
+                <label for="lpg">LPG</label>
+
+                <input id="others" name="fuel_type" type="radio"required/> 
+                <label for="others">Others</label>
+
+            </div><br>
+
+            <div>
+                <label for="kilometers_run">Kilometers Run:</label>
+                <input id="kilometers_run" type="number" placeholder="...km" required/>
+            </div><br>
+
+
+
+            <button type="submit">
+                Schedule an Appointment
+            </button>
+
+
+        </form>
+
+
+
+
+
+        
+        <br>
+        <br>
+        <hr>
+
+    </main>
+
+    <footer>
+       <div>Copyright &copy; 2020 AutoMob-Mechanic. All Rights Reserved.</div>
+    </footer>
+
+</body>
+</html>
